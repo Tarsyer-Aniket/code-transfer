@@ -1,0 +1,13 @@
+[Unit]
+Description=delete_truck_images Service
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+WorkingDirectory=/home/pi/MP-Birla-TLM/
+ExecStart=/bin/bash /home/pi/MP-Birla-TLM/delete_truck_images.sh
+
+[Install]
+WantedBy=default.target
+
